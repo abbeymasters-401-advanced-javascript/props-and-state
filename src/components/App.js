@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import RandomColor from '../containers/RandomColor';
 
-
 export default class App extends Component {
 
   render() {
