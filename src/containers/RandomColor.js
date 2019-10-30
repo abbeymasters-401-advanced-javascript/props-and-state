@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 export default class RandomColor extends Component {
 
-  state = { backgroundColor: 'black' };
+  state = { backgroundColor: 'black', backgroundImg: '' };
   
   pickColor = (colors) => {
     let newBackground = colors[Math.floor(Math.random() * colors.length)];
-    this.setState({ backgroundColor: newBackground });
+    if(this.state.backgroundColor === newBackground) this.setState({ backgroundImg: 'url(https://i.dailymail.co.uk/i/pix/2016/03/18/15/324D202500000578-3498922-image-a-33_1458315465874.jpg)' })
+    else this.setState({ backgroundColor: newBackground, backgroundImg: '' });
   };
 
   componentDidMount() {
@@ -17,6 +18,7 @@ export default class RandomColor extends Component {
   render() {
     const bodyStyle = {
       backgroundColor: this.state.backgroundColor,
+      backgroundImage: this.state.backgroundImg,
       width: '1450px',
       height: '1000px'
     };
