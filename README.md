@@ -2,8 +2,8 @@
 Author: Abbey Masters
 
 ## Submission Links
-* [GitHub PR 1] (https://github.com/abbeymasters-401-advanced-javascript/props-and-state/pull/1)
-* [GitHub PR 2] ()
+* [GitHub PR 1] ()
+* [GitHub PR 2] (https://github.com/abbeymasters-401-advanced-javascript/props-and-state/pull/3)
 
 ## Scripts
 "test": "jest --verbose",
